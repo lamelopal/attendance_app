@@ -1,4 +1,6 @@
 import 'package:attandance_edit/attendance/attendance_screen.dart';
+import 'package:attandance_edit/history/history_screen.dart';
+import 'package:attandance_edit/permission/permission_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../attendance/custom_button_widget.dart';
@@ -77,16 +79,16 @@ class HomeScreen extends StatelessWidget {
                         custom_button_widget(
                           imageAssetPath: 'assets/images/sick.png',
                           title: 'Permission',
-                          targetPage: AttendanceScreen(),
+                          targetPage: AbsenScreen(),
                         ),
                         custom_button_widget(
                           imageAssetPath: 'assets/images/history.png',
                           title: 'History',
-                          targetPage: AttendanceScreen(),
+                          targetPage: AttandanceHistoryScreen(),
                         ),
                         custom_button_widget(
                           imageAssetPath: 'assets/images/logout.png',
-                          title: 'Logout',
+                          title: 'Exit',
                           targetPage: AttendanceScreen(),
                         ),
                       ],
